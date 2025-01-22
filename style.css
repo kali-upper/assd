@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+header {
+    background-color: #161515;
+    color: white;
+    text-align: center;
+    padding: .005rem 0;
+    background: linear-gradient(to right, #42404062, #2d2c2e);
+}
+header:hover {
+    background: linear-gradient(to right, #9e9e9e62, #0d0927);
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+    max-width: 1800px;
+}
+.video-card {
+    background: rgb(0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.1s;
+}
+.video-card:hover {
+transform: translateY(-10px);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+background: linear-gradient(120deg, #222020, #6b6464);
+}
+.thumbnail {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.video-content {
+    padding: 10px;
+}
+.video-title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #ffffff;
+}
+.video-description {
+    font-size: 14px;
+    color: #ff0000;
+    margin: 0;
+}
+.video-description:hover {
+    color: #ffffff;
+}
+
+.video-link {
+display: inline-block;
+margin-top: 10px;
+padding: 12px 25px;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: white;
+background: linear-gradient(45deg, #1305d4, #04e004);
+border: none;
+border-radius: 50px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+text-align: center;
+}
+
+.video-link:hover {
+background: linear-gradient(135deg, #000000, rgb(95, 11, 11));
+transform: scale(1.1);
+box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.video-link:active {
+transform: scale(0.95);
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+#upload-section {
+    text-align: center;
+    margin: 5px auto;
+}
+#file-input {
+    display: none;
+}
+#custom-upload-btn {
+    display: inline-block;
+    background-color: #9e0000;
+    color: white;
+    padding: 13px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background: linear-gradient(45deg, #00d9ff, #000000);
+}
+#custom-upload-btn:hover {
+    background-color: #4CAF50;
+    background: linear-gradient(45deg, #000000, #4CAF50);
+}
+
+#back-to-top {
+position: fixed;
+bottom: 20px;
+right: 20px;
+padding: 10px 20px;
+font-size: 16px;
+color: white;
+background-color: #4CAF50;
+border: none;
+border-radius: 50px;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+transition: background-color 0.3s, transform 0.2s;
+background: linear-gradient(45deg, #1305d4, #04e004);
+}
+
+#back-to-top:hover {
+background-color: #ff0047;
+transform: scale(1.1);
+background: linear-gradient(135deg, #000000, rgb(95, 11, 11));
+}
